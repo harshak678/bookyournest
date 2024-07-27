@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Signup.Models.admin>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>getroomdetailsforUser</title>
+    <style>
+        .header {
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+            .navbar a {
+                color:black;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .navbar a:hover {
+                    background-color: darkgray;
+                }
+    </style>
+</head>
+<body style="background-image: url('../uploads/h.jpg');background-repeat:no-repeat; background-size:contain;background-size:cover;">
+
+    <div class="header">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/uploads/h.jpg" alt="Logo" style="max-height: 40px; margin-right: 10px;" />
+
+            </a>
+            <div style="font-size:20px"><b> BookYourNest.com</b></div>
+            <nav class="navbar">
+                @Html.ActionLink("Edit user details", "editsignupdetails", "signup")
+                @Html.ActionLink("Delete account", "deletesignupdetails", "signup")
+              
+                @Html.ActionLink("Signout", "logout")
+
+            </nav>
+        </div>
+    </div>
+   
+    <center>
+        <h3>Explore the rooms!</h3>
+        <table class="table" width="1000px" style="padding-top:50px">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.room_number)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.room_catagory)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.availability)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.image)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.room_number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.room_catagory)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.availability)
+                    </td>
+                    <td>
+                        <img src="@Html.DisplayFor(modelItem => item.image)" height="180" width="180" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Book now", "roombooking", "booking")
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </center>
+       
+</body>
+</html>

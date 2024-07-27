@@ -1,0 +1,277 @@
+﻿@model Signup.Models.signup
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Signup!</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-image: url('../uploads/h.jpg');background-repeat:no-repeat; background-size:contain;background-size:cover;">
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/uploads/h.jpg" alt="Logo" style="max-height: 40px; margin-right: 10px;" />
+                BookYourNest.com
+            </a>
+
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Sign in", "login", "signup", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Sign up", "adduserdetails", "signup", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <center>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <p style="color:blue;font-size:25px;"><u><b>Sign up here!</b></u></p>
+
+            <div class="form-horizontal" style="align-items:center">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group" style="align-items:center">
+                    @Html.LabelFor(model => model.firstName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control", id = "firstName" } })
+                        <span id="firstname_Error" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.lastName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control", id = "lastName" } })
+                        <span id="lastname_Error" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+
+                        <input type="radio" name="@Html.NameFor(mode1 => mode1.gender)" value="M" />Male
+                        <input type="radio" name="@Html.NameFor(mode1 => mode1.gender)" value="F" />Female
+                        @Html.ValidationMessageFor(model => model.gender, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.phoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.phoneNumber, new { htmlAttributes = new { @class = "form-control", id = "phoneNumber" } })
+                        <span id="phone_Error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.emailAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.emailAddress, new { htmlAttributes = new { @class = "form-control", id = "emailAddress" } })
+                        @Html.ValidationMessageFor(model => model.emailAddress, "", new { @class = "text-danger" })
+                        <span id="email_Error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.state, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <select name="state" id="dropdown1" onchange="populate(this.id,'city')" style="width: 300px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;"><option value="">--choose state--</option><option value="kerala">kerala</option><option value="karnataka">karnataka</option><option value="tamilnadu">Tamilnadu</option></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.city, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <select name="city" id="dropdown2" style="width: 300px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;"></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.username, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+                        <span id="username_Error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(model => model.password, new
+                   {
+                       style = "width: 300px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;"
+                   })
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                        <span id="password_Error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.confirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(model => model.confirmPassword, new
+                   {
+                       style = "width: 300px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;"
+                   })
+                        <span id="confirmpassword_Error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group" style="padding-top:25px">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Signup" class="btn btn-default" style="background-color:aquamarine" onclick="return validateform();" />
+                    </div>
+                </div>
+                @Html.ViewData["Message"]
+            </div>
+        }
+
+
+    </center>
+    @if (TempData["bookmessage"] != null)
+    {
+        <div>@TempData["bookmessage"]</div>
+    }
+    <div style="text-align:center">
+        @Html.ActionLink("Back to Login", "login")
+    </div>
+    <div class="container body-content">
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Bookyournest</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (event) {
+                $('#firstname_Error').html('');
+                $('#lastname_Error').html('');
+                $('#phone_Error').html('');
+                $('#email_Error').html('');
+                $('#username_Error').html('');
+                $('#password_Error').html('');
+                $('#confirmpassword_Error').html('');
+
+                var firstName = $('#firstName').val().trim();
+                var lastName = $('#lastName').val().trim();
+                var phoneNumber = $('#phoneNumber').val().trim();
+                var email = $('#emailAddress').val().trim();
+                var username = $('#username').val().trim();
+                var password = $('#password').val().trim();
+                var confirmPassword = $('#confirmPassword').val().trim();
+
+                var isValid = true;
+
+                // Validate first name
+                if (firstName === '') {
+                    $('#firstname_Error').html('First name is required!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate last name
+                if (lastName === '') {
+                    $('#lastname_Error').html('Last name is required!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate phone number
+                if (phoneNumber.length !== 10) {
+                    $('#phone_Error').html('Enter a valid 10-digit phone number!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate email
+                if (email === '') {
+                    $('#email_Error').html('Email is required!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate username
+                if (username === '') {
+                    $('#username_Error').html('Username is required!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate password
+                if (password === '') {
+                    $('#password_Error').html('Password is required!').css('color', 'red');
+                    isValid = false;
+                }
+
+                // Validate confirm password
+                if (password !== confirmPassword) {
+                    $('#confirmpassword_Error').html('Password and confirm password should be the same!').css('color', 'red');
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    event.preventDefault(); // Prevent the form from submitting
+                }
+
+                return isValid;
+            });
+
+            // Function to populate dropdown
+            function populate(s1, s2) {
+                var selectedS1 = $('#' + s1).val();
+                var $s2 = $('#' + s2);
+                $s2.html('');
+
+                var optionArray = [];
+                if (selectedS1 === 'kerala') {
+                    optionArray = ['kannur|Kannur', 'calicut|Calicut', 'cochi|Cochi'];
+                } else if (selectedS1 === 'karnataka') {
+                    optionArray = ['coorg|Coorg', 'mangalore|Mangalore', 'bangalore|Bangalore'];
+                } else {
+                    optionArray = ['chennai|Chennai', 'salem|Salem', 'coimbatur|Coimbatur'];
+                }
+
+                $.each(optionArray, function (index, option) {
+                    var pair = option.split('|');
+                    var newOption = $('<option></option>').val(pair[0]).html(pair[1]);
+                    $s2.append(newOption);
+                });
+            }
+
+            
+            $('#dropdown1').change(function () {
+                populate('dropdown1', 'dropdown2');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

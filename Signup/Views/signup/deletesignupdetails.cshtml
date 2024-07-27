@@ -1,0 +1,175 @@
+﻿@model Signup.Models.signup
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        .header {
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+            .navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .navbar a:hover {
+                    background-color: darkgray;
+                }
+    </style>
+</head>
+<body style="background-image: url('../uploads/h.jpg');background-repeat:no-repeat; background-size:contain;background-size:cover;">
+
+    <div class="header">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/uploads/h.jpg" alt="Logo" style="max-height: 40px; margin-right: 10px;" />
+
+            </a>
+            <div style="font-size:20px"><b> BookYourNest.com</b></div>
+            <nav class="navbar">
+
+                @Html.ActionLink("Signout", "logout")
+
+            </nav>
+        </div>
+    </div>
+    <center>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.firstName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.firstName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.lastName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.lastName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.gender)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.gender)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.phoneNumber)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.phoneNumber)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.emailAddress)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.emailAddress)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.state)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.state)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.city)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.city)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.username)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.username)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.password)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.password)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.confirmPassword)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.confirmPassword)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.Id)
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> 
+                    
+                </div>
+            }
+        </div>
+        @if (TempData["bookmessage"] != null)
+        {
+            <div>@TempData["bookmessage"]</div>
+        }
+        </center>
+            <div class="container body-content" style="padding-top: 50px">
+
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - Bookyournest</p>
+                </footer>
+            </div>
+</body>
+</html>

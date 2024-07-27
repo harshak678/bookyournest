@@ -1,0 +1,150 @@
+﻿
+@model IEnumerable<Signup.Models.userbooking>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>bookingDetails</title>
+    <style>
+        .header {
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+            .navbar a {
+                color: azure;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .navbar a:hover {
+                    background-color: darkgray;
+                }
+    </style>
+</head>
+<body style="background-image: url('../uploads/h.jpg');background-repeat:no-repeat; background-size:contain;background-size:cover;">
+    <div class="header">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/uploads/h.jpg" alt="Logo" style="max-height: 40px; margin-right: 10px;" />
+
+            </a>
+            <div style="font-size:20px"><b> BookYourNest.com</b></div>
+            <nav class="navbar">
+                @Html.ActionLink("List of added rooms", "getroomdetails", "admin")
+                
+                
+                @Html.ActionLink("Manage bookings", "bookingDetails", "booking")
+
+
+                @Html.ActionLink("Signout", "logout")
+
+            </nav>
+        </div>
+    </div>
+
+    
+    <center>
+        <h2>Booking Details</h2>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.name)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.emailid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.checkin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.checkout)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.guestsnumber)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.emailid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.checkin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.checkout)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.guestsnumber)
+                    </td>
+                    <td>
+
+                        @Html.ActionLink("Sent confirmation", "SendConfirmationEmail", "admin", new { id = item.Id }, null)
+
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @Html.Raw(ViewBag.ErrorMessage)
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+        {
+            <div class="alert alert-success">
+                @Html.Raw(ViewBag.SuccessMessage)
+            </div>
+        }
+
+    </center>
+
+    <div class="container body-content" style="padding-top: 400px">
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Bookyournest</p>
+        </footer>
+    </div>
+</body>
+</html>

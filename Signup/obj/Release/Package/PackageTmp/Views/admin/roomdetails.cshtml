@@ -1,0 +1,153 @@
+﻿@model Signup.Models.admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>roomdetails</title>
+    <style>
+        .header {
+            
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+            .navbar a {
+                color:black;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .navbar a:hover {
+                    background-color:darkgray;
+                }
+        </style>
+</head>
+<body style="background-image: url('../uploads/h.jpg');background-repeat:no-repeat; background-size:contain;background-size:cover;">
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <div class="header">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/uploads/h.jpg" alt="Logo" style="max-height: 40px; margin-right: 10px;" />
+
+            </a>
+            <div style="font-size:20px"><b> BookYourNest.com</b></div>
+            <nav class="navbar">
+                @Html.ActionLink("List of added rooms", "getroomdetails", "admin")
+
+
+
+                @Html.ActionLink("Manage bookings", "bookingDetails", "booking")
+
+
+                @Html.ActionLink("Signout", "logout")
+
+            </nav>
+        </div>
+    </div>
+
+
+    @using (Html.BeginForm("roomdetails", "admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal" style="text-align: center; padding-top: 25px"><h2><u><b>Add room details!</b></u></h2></div>
+        <div class="form-horizontal" style="text-align: center; padding-top: 25px">
+
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.room_number, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="text" name="room_number"
+                           style="width: 200px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;" />
+                    @Html.ValidationMessageFor(model => model.room_number, "", new { @class = "field-validation-error" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.room_catagory, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="text" name="room_catagory"
+                           style="width: 200px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;" />
+                    @Html.ValidationMessageFor(model => model.room_catagory, "", new { @class = "field-validation-error" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.price, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="text" name="price" style="width: 200px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;" />
+
+
+                    @Html.ValidationMessageFor(model => model.price, "", new { @class = "field-validation-error" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.availability, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+
+                    <input type="radio" name="@Html.NameFor(mode1=>mode1.availability)" value="Yes" />Yes
+                    <input type="radio" name="@Html.NameFor(mode1=>mode1.availability)" value="No" />No
+                    @Html.ValidationMessageFor(model => model.availability, "", new { @class = "field-validation-error" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.image, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+
+                    <input type="file" name="file" /> @Html.ValidationMessageFor(model => model.image, "", new { @class = "field-validation-error" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10" style="text-align: center; padding-top: 25px;">
+                    <input type="submit" value="Add" class="btn btn-default" style="width: 100px;margin-bottom: 15px;padding: 2px;box-sizing: border-box;border: 1px solid #ddd;border-radius: 5px;padding: 0.375rem 0.75rem;" />
+                </div>
+            </div>
+
+        </div>
+
+    }
+    <style>
+        .field-validation-error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+
+    <footer style="padding-top:150px">
+        <p>&copy; @DateTime.Now.Year - Bookyournest</p>
+    </footer>
+
+
+</body>
+</html>

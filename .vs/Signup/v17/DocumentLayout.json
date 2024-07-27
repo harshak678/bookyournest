@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\Signup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|c:\\users\\user\\source\\repos\\signup\\signup\\views\\signup\\editsignupdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\signup\\editsignupdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\signup\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\signup\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\signup\\adduserdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\signup\\adduserdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\booking\\roombooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\booking\\roombooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\booking\\bookingdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\booking\\bookingdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\booking\\bookingdetailsforuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\booking\\bookingdetailsforuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\models\\userbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\models\\userbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\repository\\adminroomdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\repository\\adminroomdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\models\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\models\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\admin\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\admin\\roomdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|C:\\Users\\user\\source\\repos\\Signup\\signup\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3E637E6-58B4-4B73-87F8-0D9BF9634CE1}|Signup\\Signup.csproj|solutionrelative:signup\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "signupController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\signupController.cs",
+              "RelativeDocumentMoniker": "Signup\\Controllers\\signupController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\signupController.cs",
+              "RelativeToolTip": "Signup\\Controllers\\signupController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAE8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T07:54:13.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "userRepo.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Repository\\userRepo.cs",
+              "RelativeDocumentMoniker": "Signup\\Repository\\userRepo.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Repository\\userRepo.cs",
+              "RelativeToolTip": "Signup\\Repository\\userRepo.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T10:08:11.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\login.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\signup\\login.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\login.cshtml",
+              "RelativeToolTip": "Signup\\Views\\signup\\login.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAACsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T07:51:53.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "editsignupdetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\editsignupdetails.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\signup\\editsignupdetails.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\editsignupdetails.cshtml",
+              "RelativeToolTip": "Signup\\Views\\signup\\editsignupdetails.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T13:19:21.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "adminController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\adminController.cs",
+              "RelativeDocumentMoniker": "Signup\\Controllers\\adminController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\adminController.cs",
+              "RelativeToolTip": "Signup\\Controllers\\adminController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAAAGEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T08:43:00.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "adduserdetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\adduserdetails.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\signup\\adduserdetails.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\signup\\adduserdetails.cshtml",
+              "RelativeToolTip": "Signup\\Views\\signup\\adduserdetails.cshtml",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAAAJ0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T07:54:05.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Signup\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T13:14:04.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "bookingController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\bookingController.cs",
+              "RelativeDocumentMoniker": "Signup\\Controllers\\bookingController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\bookingController.cs",
+              "RelativeToolTip": "Signup\\Controllers\\bookingController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T08:43:14.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "bookingDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\bookingDetails.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\booking\\bookingDetails.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\bookingDetails.cshtml",
+              "RelativeToolTip": "Signup\\Views\\booking\\bookingDetails.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAADwv3sAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T09:17:59.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "roombooking.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\roombooking.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\booking\\roombooking.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\roombooking.cshtml",
+              "RelativeToolTip": "Signup\\Views\\booking\\roombooking.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAADwv4MAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T06:59:24.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Signup\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Signup\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T08:39:52.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "bookingDetailsforuser.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\bookingDetailsforuser.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\booking\\bookingDetailsforuser.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\booking\\bookingDetailsforuser.cshtml",
+              "RelativeToolTip": "Signup\\Views\\booking\\bookingDetailsforuser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T05:58:16.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "userbooking.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\userbooking.cs",
+              "RelativeDocumentMoniker": "Signup\\Models\\userbooking.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\userbooking.cs",
+              "RelativeToolTip": "Signup\\Models\\userbooking.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T06:53:21.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "signup.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\signup.cs",
+              "RelativeDocumentMoniker": "Signup\\Models\\signup.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\signup.cs",
+              "RelativeToolTip": "Signup\\Models\\signup.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA5wDMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T12:45:53.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "admin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\admin.cs",
+              "RelativeDocumentMoniker": "Signup\\Models\\admin.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Models\\admin.cs",
+              "RelativeToolTip": "Signup\\Models\\admin.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T11:34:45.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "adminroomdetails.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Repository\\adminroomdetails.cs",
+              "RelativeDocumentMoniker": "Signup\\Repository\\adminroomdetails.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Repository\\adminroomdetails.cs",
+              "RelativeToolTip": "Signup\\Repository\\adminroomdetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T09:07:40.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "roomdetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\admin\\roomdetails.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\admin\\roomdetails.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\admin\\roomdetails.cshtml",
+              "RelativeToolTip": "Signup\\Views\\admin\\roomdetails.cshtml",
+              "ViewState": "AQIAAGoAAAAAAAAAAADwv40AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T07:48:16.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Signup\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T16:52:14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Signup\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Signup\\Signup\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Signup\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-06T16:46:53.378Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
